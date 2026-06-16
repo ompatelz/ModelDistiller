@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+
+# Data — raw generated bulk (keep samples and curated sets)
+data/raw/raw_generated.jsonl
+data/curated/
+
+# Model checkpoints and weights (large binary files)
+training/checkpoints/
+training/merged_model/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.zip
+lora_model/
+
+# GGUF files (large — distribute via release or Hugging Face Hub)
+*.gguf
+
+# Jupyter / Colab
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# MyPy
+.mypy_cache/
+
+# Ruff
+.ruff_cache/
+
+# pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/

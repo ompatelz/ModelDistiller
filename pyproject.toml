@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "forge"
+version = "0.1.0"
+description = "Frontier-to-small-model distillation pipeline for structured invoice extraction"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+generation = [
+    "anthropic>=0.40.0",
+]
+curation = [
+    "pydantic>=2.0.0",
+]
+evaluation = [
+    # transformers + torch installed separately in Colab (GPU-specific builds)
+    # pip install transformers torch
+    "pydantic>=2.0.0",
+    "anthropic>=0.40.0",
+]
+serving = [
+    "fastapi>=0.110.0",
+    "uvicorn>=0.27.0",
+    "requests>=2.31.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "UP"]
+ignore = ["E501"]  # Line too long — we're lenient here for docstrings
+
+[tool.mypy]
+python_version = "3.11"
+strict = false
+ignore_missing_imports = true

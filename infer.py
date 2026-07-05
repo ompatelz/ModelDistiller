@@ -33,7 +33,7 @@ from pathlib import Path
 
 # ── Config ────────────────────────────────────────────────────────────────────
 BASE_MODEL  = "Qwen/Qwen2.5-3B-Instruct"
-LORA_PATH   = "models/lora_model"
+LORA_PATH   = "models/lora_model" if Path("models/lora_model").exists() else "ompatelz/Forge-Qwen2.5-3B-Invoice-LoRA"
 MAX_TOKENS  = 1024
 TEMPERATURE = 0.1
 

@@ -52,7 +52,8 @@ from schema.extraction_schema import InvoiceExtraction, SCHEMA_DESCRIPTION
 
 # ── Config ─────────────────────────────────────────────────────────────────────
 BASE_MODEL     = os.environ.get("BASE_MODEL", "Qwen/Qwen2.5-3B-Instruct")
-LORA_PATH      = os.environ.get("LORA_PATH",  "models/lora_model")
+_default_lora  = "models/lora_model" if Path("models/lora_model").exists() else "ompatelz/Forge-Qwen2.5-3B-Invoice-LoRA"
+LORA_PATH      = os.environ.get("LORA_PATH",  _default_lora)
 MAX_NEW_TOKENS = int(os.environ.get("MAX_NEW_TOKENS", "1024"))
 TEMPERATURE    = 0.1
 

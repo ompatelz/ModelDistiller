@@ -1,0 +1,37 @@
+{
+  "n_requested": 1000,
+  "n_generated": 926,
+  "n_parse_failures": 74,
+  "n_schema_invalid_at_generation": 145,
+  "total_input_tokens": 757734,
+  "by_scenario": {
+    "freight_medium": 66,
+    "saas_easy": 37,
+    "saas_annual_medium": 62,
+    "restaurant_easy": 45,
+    "retail_discount_hard": 28,
+    "retail_easy": 37,
+    "eur_german_medium": 59,
+    "canadian_gst_medium": 56,
+    "utilities_medium": 61,
+    "healthcare_medium": 53,
+    "partial_payment_hard": 34,
+    "legal_services_hard": 45,
+    "consulting_milestone_medium": 44,
+    "construction_easy": 30,
+    "missing_fields_hard": 53,
+    "consulting_easy": 49,
+    "tax_exempt_hard": 48,
+    "uk_vat_easy": 52,
+    "messy_restaurant_hard": 32,
+    "international_aud_hard": 35
+  },
+  "by_difficulty": {
+    "easy": 250,
+    "medium": 401,
+    "hard": 275
+  },
+  "started_at": "2026-06-21T14:49:03.619661+00:00",
+  "finished_at": "2026-06-21T19:59:59.623135+00:00",
+  "success_rate": 0.926
+}

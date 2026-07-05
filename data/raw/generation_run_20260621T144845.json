@@ -1,0 +1,20 @@
+{
+  "n_requested": 3,
+  "n_generated": 3,
+  "n_parse_failures": 0,
+  "n_schema_invalid_at_generation": 1,
+  "total_input_tokens": 2341,
+  "by_scenario": {
+    "freight_medium": 1,
+    "saas_easy": 1,
+    "saas_annual_medium": 1
+  },
+  "by_difficulty": {
+    "easy": 1,
+    "medium": 2,
+    "hard": 0
+  },
+  "started_at": "2026-06-21T14:47:56.633617+00:00",
+  "finished_at": "2026-06-21T14:48:45.254353+00:00",
+  "success_rate": 1.0
+}

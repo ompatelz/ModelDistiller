@@ -1,6 +1,6 @@
 [build-system]
 requires = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name = "forge"
@@ -8,13 +8,15 @@ version = "0.1.0"
 description = "Frontier-to-small-model distillation pipeline for structured invoice extraction"
 requires-python = ">=3.11"
 dependencies = [
-    "anthropic>=0.40.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
     "pydantic>=2.0.0",
 ]
 
 [project.optional-dependencies]
 generation = [
-    "anthropic>=0.40.0",
+    "openai>=1.0.0",
+    "python-dotenv>=1.0.0",
 ]
 curation = [
     "pydantic>=2.0.0",
@@ -23,18 +25,39 @@ evaluation = [
     # transformers + torch installed separately in Colab (GPU-specific builds)
     # pip install transformers torch
     "pydantic>=2.0.0",
-    "anthropic>=0.40.0",
+    "openai>=1.0.0",
 ]
 serving = [
     "fastapi>=0.110.0",
     "uvicorn>=0.27.0",
     "requests>=2.31.0",
+    "peft>=0.11.0",
+    "transformers>=4.45.0",
+    "accelerate>=0.30.0",
+]
+training = [
+    "datasets>=2.19.0",
+    "peft>=0.11.0",
+    "transformers>=4.45.0",
+    "accelerate>=0.30.0",
+    "trl>=0.9.0",
 ]
 dev = [
     "pytest>=8.0.0",
     "pytest-asyncio>=0.23.0",
     "ruff>=0.4.0",
     "mypy>=1.10.0",
+]
+
+[tool.setuptools.packages.find]
+include = [
+    "cost_analysis*",
+    "data_curation*",
+    "data_generation*",
+    "evaluation*",
+    "schema*",
+    "serving*",
+    "training*",
 ]
 
 [tool.pytest.ini_options]

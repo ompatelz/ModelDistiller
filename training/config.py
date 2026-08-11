@@ -37,9 +37,9 @@ class ModelConfig:
     """Student model selection."""
 
     # CONFIRM-AT-TRAINING-TIME: verify the HuggingFace model ID is current
-    model_name: str = "unsloth/Qwen2.5-1.5B-Instruct"
-    # Stretch option if 1.5B results are unconvincing (flag to user first):
-    # model_name: str = "unsloth/Qwen2.5-3B-Instruct"
+    model_name: str = "unsloth/Qwen2.5-3B-Instruct"
+    # Lower-resource fallback if 3B does not fit the available GPU:
+    # model_name: str = "unsloth/Qwen2.5-1.5B-Instruct"
 
     max_seq_length: int = 2048    # Maximum context length during training
     dtype: str = "float16"        # bfloat16 on Ampere+; float16 on T4 (older)

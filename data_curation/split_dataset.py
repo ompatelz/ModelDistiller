@@ -190,17 +190,18 @@ def split_dataset(
     total = len(examples)
     log.info("Loaded %d examples", total)
 
-    if total < eval_min:
+    if total < eval_min + 2:
         raise ValueError(
             f"Only {total} examples available — cannot create an eval set of "
-            f"{eval_min} examples.  Generate more data or lower --eval-min."
+            f"{eval_min} examples while leaving at least one validation and one "
+            "training example. Generate more data or lower --eval-min."
         )
 
     # ------------------------------------------------------------------
     # 1. Eval split (sampled first, before any training touches it)
     # ------------------------------------------------------------------
     eval_target = max(eval_min, round(total * eval_fraction))
-    eval_target = min(eval_target, total - eval_min)  # Don't eat all examples
+    eval_target = min(eval_target, total - 2)  # Leave room for val and train examples
     log.info("Eval target: %d examples (%.1f%% of %d)", eval_target, eval_target / total * 100, total)
 
     eval_examples, remainder = _stratified_sample(examples, eval_target, rng)

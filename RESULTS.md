@@ -1,123 +1,49 @@
-# Forge — Results
+# Forge Results
 
-**Base vs. Fine-tuned vs. Teacher model comparison on the locked eval set.**
+This file records what is evidenced by committed repository artifacts. Model-quality numbers should only be added here after the corresponding `evaluation/results/*.json` files are generated and committed or otherwise published with a reproducible run link.
 
-This is the central artifact of the project.  All numbers below are measured,
-not estimated.  Fields marked `TODO — not yet measured` will be filled in as
-each phase completes.
+## Dataset Evidence
 
----
+| Metric | Value | Source |
+| --- | ---: | --- |
+| Generation requests | 1,000 | `data/raw/generation_run_20260621T195959.json` |
+| Successfully generated examples | 926 | `data/raw/generation_run_20260621T195959.json` |
+| Parse/API failures | 74 | `data/raw/generation_run_20260621T195959.json` |
+| Schema-invalid at generation time | 145 | `data/raw/generation_run_20260621T195959.json` |
+| Training examples | 600 | `data/train.jsonl` |
+| Validation examples | 67 | `data/val.jsonl` |
+| Locked eval examples | 91 | `data/eval_locked.jsonl` |
+
+## Locked Eval Set
+
+`data/eval_locked.jsonl` is protected by a SHA-256 checksum:
+
+```text
+0ec6e5175885a61467757403a6fe0f9207b5378b175f0563b08871c5beba9264
+```
+
+The evaluation runner verifies this checksum before running unless explicitly invoked with `--no-checksum-verify`.
 
 ## Quality Metrics
 
-| Metric | Base Qwen2.5 (no fine-tune) | Fine-tuned Qwen2.5 | Claude (teacher) |
-|--------|-----------------------------|--------------------|------------------|
-| Schema validity rate | TODO | TODO | TODO |
-| Field-level accuracy (overall) | TODO | TODO | TODO |
-| Full-record exact-match rate | TODO | TODO | TODO |
-| vendor_name accuracy | TODO | TODO | TODO |
-| invoice_date accuracy | TODO | TODO | TODO |
-| total_amount accuracy | TODO | TODO | TODO |
-| line_items accuracy | TODO | TODO | TODO |
-| tax_rate accuracy | TODO | TODO | TODO |
-| currency accuracy | TODO | TODO | TODO |
+| Metric | Base Qwen2.5 | Fine-tuned Qwen2.5 | Teacher |
+| --- | ---: | ---: | ---: |
+| Schema validity rate | Pending | Pending | Pending |
+| Field-level accuracy | Pending | Pending | Pending |
+| Full-record exact-match rate | Pending | Pending | Pending |
+| p50 latency per document | Pending | Pending | Pending |
+| p95 latency per document | Pending | Pending | Pending |
 
-*Field-level accuracy = fraction of eval examples where that field's extracted value matched ground truth (exact match for strings, 2-decimal rounding for numerics).*
+The code to produce these metrics exists in `evaluation/run_eval.py` and `evaluation/scoring.py`, but the resulting JSON artifacts are not currently committed.
 
----
+## Cost Metrics
 
-## Latency
+Cost comparison is implemented in `cost_analysis/compute_cost_comparison.py`, but it depends on current OpenRouter pricing and measured token/latency outputs from eval runs. Do not publish cost-per-success or payback-period numbers until those inputs are refreshed.
 
-| Metric | Base Qwen2.5 | Fine-tuned Qwen2.5 | Claude (teacher) |
-|--------|-------------|--------------------|--------------------|
-| p50 latency per document | TODO | TODO | TODO |
-| p95 latency per document | TODO | TODO | TODO |
+## Current Limitations
 
-*Latency for base/fine-tuned measured on: TODO (Colab T4 / local hardware)*
-
----
-
-## Cost
-
-| Metric | Base Qwen2.5 | Fine-tuned Qwen2.5 | Claude (teacher) |
-|--------|-------------|--------------------|--------------------|
-| Cost per 1,000 documents | ~$0 (self-hosted) | ~$0 (self-hosted) | TODO |
-| Cost per success | ~$0 | ~$0 | TODO |
-
-*Claude pricing source: https://www.anthropic.com/pricing — verified TODO*
-
----
-
-## Cost to Build This Pipeline
-
-| Item | Cost |
-|------|------|
-| Synthetic data generation (Claude Haiku, ~1000 examples) | TODO |
-| Teacher eval run (Claude Sonnet, ~100 examples) | TODO |
-| Compute (Colab free tier) | $0 |
-| **Total** | **TODO** |
-
----
-
-## Training Run
-
-| Parameter | Value |
-|-----------|-------|
-| Model | TODO |
-| LoRA rank | TODO |
-| Learning rate | TODO |
-| Epochs | TODO |
-| Training examples | TODO |
-| Val examples | TODO |
-| Wall-clock training time | TODO — not yet measured |
-| GPU | TODO |
-
----
-
-## Eval Set Composition
-
-| Difficulty | Count | % of eval set |
-|------------|-------|---------------|
-| Easy | TODO | TODO |
-| Medium | TODO | TODO |
-| Hard | TODO | TODO |
-| **Total** | **TODO** | 100% |
-
-*Eval set SHA-256: TODO (filled by split_dataset.py)*
-
----
-
-## Payback Period Analysis
-
-> At what document volume does deploying the fine-tuned model pay back the
-> cost of building this pipeline vs. just calling the Claude API per document?
-
-- Pipeline build cost: TODO
-- Claude cost per 1,000 documents: TODO
-- Break-even document count: TODO
-- At N documents/month: payback in TODO months
-
----
-
-## Honest Limitations
-
-- The eval set is synthetic, generated by the same Claude model used as the
-  teacher.  Real-world performance on actual business documents may differ.
-  A production version of this system would validate on real-world samples
-  before deployment.
-- The following field types showed the largest gap between fine-tuned and
-  teacher model: TODO (fill in after eval)
-- One specific failure case the fine-tuned model still gets wrong: TODO
-
----
-
-## Eval Set Integrity Notes
-
-*Any corrections to eval_locked.jsonl after initial locking are documented here.*
-
-*(None to date — eval set has not been modified since locking.)*
-
----
-
-*Generated by running: `python -m cost_analysis.compute_cost_comparison`*
-*Last updated: TODO*
+- The eval set is synthetic, not real production invoices.
+- The committed repo does not include trained LoRA adapter weights.
+- The committed repo does not include `evaluation/results/base_model_results.json`, `evaluation/results/finetuned_model_results.json`, or `evaluation/results/teacher_model_results.json`.
+- `training/run_log.md` still needs to be filled from the actual training run.
+- Any headline benchmark should be treated as unverified until the corresponding artifacts are attached.

@@ -16,7 +16,7 @@ Design principles
 3.  Edge cases are first-class: at least 6 of the 20 scenarios deliberately
     test something that will trip up a model trained on clean data only
     (missing fields, unusual date formats, discounts, partial payments, etc.).
-4.  The prompts explicitly instruct Claude to produce output matching the
+4.  The prompts explicitly instruct the teacher model to produce output matching the
     fixed schema in schema/extraction_schema.py — the schema description is
     embedded in every prompt.
 """

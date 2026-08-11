@@ -14,10 +14,10 @@ Inputs
 1.  evaluation/results/teacher_model_results.json    (real eval output)
 2.  evaluation/results/finetuned_model_results.json  (real eval output)
 3.  evaluation/results/base_model_results.json       (real eval output)
-4.  Current Claude API pricing (Anthropic pricing page — sourced below)
+4.  Current OpenRouter pricing for the selected teacher model
 
-Claude API pricing source
---------------------------
+OpenRouter pricing source
+-------------------------
 Prices below are from the OpenRouter pricing page for DeepSeek V4 Flash.
 Update the PRICING dict before running if stale.
 Source: https://openrouter.ai/models?q=deepseek (filter for the exact slug)
@@ -36,8 +36,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
-# Claude API pricing — UPDATE THIS before running
-# Source: https://www.anthropic.com/pricing
+# OpenRouter API pricing — UPDATE THIS before running
+# Source: https://openrouter.ai/models
 # Last verified: TODO — verify current pricing before using in RESULTS.md
 # ---------------------------------------------------------------------------
 
@@ -279,7 +279,7 @@ def compute_and_print_comparison(
 
     return {
         "teacher_cost_per_1000_usd": teacher_cost_1000,
-        "pricing_source": "https://www.anthropic.com/pricing",
+        "pricing_source": "https://openrouter.ai/models",
         "pricing_verified_date": "TODO — verify before publishing",
     }
 

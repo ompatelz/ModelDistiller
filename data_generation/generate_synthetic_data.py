@@ -24,7 +24,7 @@ is a JSON object with the following fields:
         "difficulty":       str,   # easy | medium | hard
         "document_text":    str,   # the synthetic invoice document
         "ground_truth_json": dict, # the extraction — conforms to InvoiceExtraction
-        "model":            str,   # which Claude model generated this
+        "model":            str,   # which OpenRouter model generated this
         "generated_at":     str,   # ISO 8601 timestamp
         "generation_ms":    int    # wall-clock time for this API call
     }
@@ -132,10 +132,10 @@ def _call_openrouter(
 
 def _parse_response(raw_text: str) -> dict | None:
     """
-    Parse Claude's response into a dict with 'document_text' and 'ground_truth_json'.
+    Parse the teacher response into a dict with 'document_text' and 'ground_truth_json'.
 
     Returns None if parsing fails (the caller logs and skips the example).
-    Claude is prompted to return raw JSON, but occasionally adds prose — this
+    The teacher is prompted to return raw JSON, but occasionally adds prose — this
     function strips common wrappers before attempting to parse.
     """
     text = raw_text.strip()
@@ -346,7 +346,7 @@ def generate_dataset(
 
 def _parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Generate synthetic invoice documents via Claude API.",
+        description="Generate synthetic invoice documents via OpenRouter.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(

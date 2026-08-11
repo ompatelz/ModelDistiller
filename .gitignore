@@ -57,6 +57,7 @@ Thumbs.db
 
 # pytest
 .pytest_cache/
+.pytest-tmp/
 
 # Coverage
 .coverage

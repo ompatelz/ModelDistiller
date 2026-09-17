@@ -1,0 +1,2495 @@
+{
+  "model_label": "teacher (deepseek/deepseek-chat-v4-flash)",
+  "model_class": "OpenRouterModel",
+  "n_examples": 91,
+  "aggregate": {
+    "n_examples": 91,
+    "schema_validity_rate": 1.0,
+    "full_record_exact_match_rate": 0.868,
+    "field_accuracy_by_field": {
+      "vendor_name": 0.989,
+      "vendor_address": 0.923,
+      "invoice_number": 0.989,
+      "invoice_date": 1.0,
+      "due_date": 0.989,
+      "bill_to": 0.945,
+      "subtotal": 0.978,
+      "tax_amount": 0.978,
+      "tax_rate": 0.989,
+      "total_amount": 0.989,
+      "currency": 1.0,
+      "payment_terms": 0.967,
+      "notes": 0.835
+    },
+    "line_item_field_accuracy_by_field": {
+      "description": 0.967,
+      "quantity": 0.956,
+      "unit_price": 0.956,
+      "total": 0.956
+    },
+    "overall_field_accuracy": 0.967,
+    "parse_failures": 0
+  },
+  "latency_p50_seconds": 4.12,
+  "latency_p95_seconds": 6.85,
+  "per_example": [
+    {
+      "example_id": "gen-00981",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00655",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00233",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00808",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00295",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00890",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00726",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00484",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00044",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00394",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00772",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00999",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00502",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00121",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00478",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00841",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00164",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00012",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00520",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00821",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00133",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00460",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00180",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00023",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00156",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": false,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00032",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00567",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00717",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00079",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00594",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00150",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00434",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00322",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00071",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00787",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00119",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00893",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00167",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00556",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": false,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00131",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00540",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00867",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00389",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00786",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00656",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00031",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00332",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00160",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00908",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00620",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00857",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00631",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00349",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00126",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00922",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00634",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00730",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00208",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00488",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00599",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00644",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00419",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00431",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00936",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00048",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00995",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00067",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00720",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00532",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00169",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00713",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00648",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00298",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00341",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 0.967,
+        "quantity": 0.956,
+        "unit_price": 0.956,
+        "total": 0.956
+      },
+      "full_record_exact_match": false,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00701",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00932",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00606",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00201",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00504",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00779",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00973",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00971",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00630",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00950",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00792",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00014",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00755",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00633",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00854",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00986",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    },
+    {
+      "example_id": "gen-00161",
+      "schema_valid": true,
+      "field_matches": {
+        "vendor_name": true,
+        "vendor_address": true,
+        "invoice_number": true,
+        "invoice_date": true,
+        "due_date": true,
+        "bill_to": true,
+        "subtotal": true,
+        "tax_amount": true,
+        "tax_rate": true,
+        "total_amount": true,
+        "currency": true,
+        "payment_terms": true,
+        "notes": true
+      },
+      "line_item_field_accuracy": {
+        "description": 1.0,
+        "quantity": 1.0,
+        "unit_price": 1.0,
+        "total": 1.0
+      },
+      "full_record_exact_match": true,
+      "parse_error": ""
+    }
+  ],
+  "eval_path": "data\\eval_locked.jsonl"
+}

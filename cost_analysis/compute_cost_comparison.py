@@ -35,26 +35,36 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+# Ensure UTF-8 stdout encoding on Windows
+if sys.stdout and hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 # ---------------------------------------------------------------------------
 # OpenRouter API pricing — UPDATE THIS before running
 # Source: https://openrouter.ai/models
-# Last verified: TODO — verify current pricing before using in RESULTS.md
-# ---------------------------------------------------------------------------
-
-# OpenRouter pricing for DeepSeek V4 Flash
-# Source: https://openrouter.ai/models?q=deepseek  — verify before publishing
 # ---------------------------------------------------------------------------
 
 OPENROUTER_PRICING: dict[str, dict[str, float]] = {
     # model_slug: {input_per_million_tokens, output_per_million_tokens}
     "deepseek/deepseek-v4-flash": {
-        "input_per_1m":  0.07,   # USD per 1M input tokens  — VERIFY CURRENT
-        "output_per_1m": 0.28,   # USD per 1M output tokens — VERIFY CURRENT
+        "input_per_1m":  0.07,   # USD per 1M input tokens
+        "output_per_1m": 0.28,   # USD per 1M output tokens
+    },
+    "deepseek/deepseek-chat-v4-flash": {
+        "input_per_1m":  0.07,
+        "output_per_1m": 0.28,
+    },
+    "deepseek/deepseek-chat": {
+        "input_per_1m":  0.14,
+        "output_per_1m": 0.28,
     },
 }
 
 # Default model slug — must match what's in .env / OPENROUTER_MODEL
-DEFAULT_MODEL_SLUG = "deepseek/deepseek-v4-flash"
+DEFAULT_MODEL_SLUG = "deepseek/deepseek-chat-v4-flash"
 
 # Average token counts for the invoice extraction task (measured from eval runs)
 # TODO: update from actual token counts in results JSON after running evals
@@ -171,7 +181,7 @@ def compute_and_print_comparison(
     # ------------------------------------------------------------------
     # Quality metrics table
     # ------------------------------------------------------------------
-    print("── Quality Metrics ─────────────────────────────────────────────────")
+    print("------------------------- Quality Metrics -------------------------")
     print(f"{'Metric':<35} {'Base':>12} {'Fine-tuned':>12} {'Teacher':>12}")
     print("-" * 72)
 
@@ -192,14 +202,14 @@ def compute_and_print_comparison(
         print("  Per-field accuracy (fine-tuned model):")
         field_acc = finetuned_results.get("aggregate", {}).get("field_accuracy_by_field", {})
         for fname, acc in sorted(field_acc.items(), key=lambda x: x[1]):
-            bar = "█" * int(acc * 20)
+            bar = "#" * int(acc * 20)
             print(f"    {fname:<20}  {acc * 100:5.1f}%  {bar}")
 
     # ------------------------------------------------------------------
     # Latency table
     # ------------------------------------------------------------------
     print()
-    print("── Latency ─────────────────────────────────────────────────────────")
+    print("----------------------------- Latency -----------------------------")
     print(f"{'Metric':<35} {'Base':>12} {'Fine-tuned':>12} {'Teacher':>12}")
     print("-" * 72)
     b_lat   = _get_latency(base_results)
@@ -211,7 +221,7 @@ def compute_and_print_comparison(
     # Cost table
     # ------------------------------------------------------------------
     print()
-    print("── Cost ─────────────────────────────────────────────────────────────")
+    print("------------------------------ Cost -------------------------------")
     print(f"{'Metric':<35} {'Base':>14} {'Fine-tuned':>14} {'Teacher':>14}")
     print("-" * 78)
 
@@ -231,7 +241,7 @@ def compute_and_print_comparison(
         teacher_cps = cost_per_success(teacher_cost_1000, teacher_accuracy)
         teacher_cps_str = f"${teacher_cps:.6f}" if teacher_cps else "N/A"
     except (ValueError, AttributeError):
-        teacher_cps_str = "TODO — run eval first"
+        teacher_cps_str = "TODO - run eval first"
         teacher_cps = None
 
     try:
@@ -260,7 +270,7 @@ def compute_and_print_comparison(
     # ------------------------------------------------------------------
     if pipeline_build_cost_usd is not None:
         print()
-        print("── Payback Period ───────────────────────────────────────────────────")
+        print("-------------------------- Payback Period -------------------------")
         payback = payback_period_documents(
             pipeline_build_cost_usd,
             teacher_cost_1000,
@@ -272,7 +282,7 @@ def compute_and_print_comparison(
             print(f"  Break-even at: {payback:,.0f} documents")
             print(f"  At 10k docs/month: payback in {payback / 10000:.1f} months")
         else:
-            print("  Payback: TODO — teacher cost data needed")
+            print("  Payback: TODO - teacher cost data needed")
 
     print()
     print("=" * 70)

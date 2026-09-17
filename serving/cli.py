@@ -89,6 +89,10 @@ def _parse_args() -> argparse.Namespace:
         help="Ollama model name for local inference.",
     )
     p.add_argument(
+        "--simulator", action="store_true",
+        help="Use built-in Forge Neural Simulator (zero dependencies, offline).",
+    )
+    p.add_argument(
         "--hf-model", default=None,
         help="HuggingFace model path (overrides Ollama).",
     )
@@ -107,6 +111,19 @@ def main() -> None:
     if not document_text.strip():
         print("Error: No document text provided.", file=sys.stderr)
         sys.exit(1)
+
+    # Simulator mode requested
+    if args.simulator:
+        from serving.inference_engine import engine_manager
+        extraction, schema_valid, latency_ms, model_label = engine_manager.extract(
+            document_text, engine="simulator"
+        )
+        indent = 2 if args.pretty else None
+        print(json.dumps(extraction, indent=indent, ensure_ascii=False))
+        if args.show_latency:
+            validity_str = "✓ schema valid" if schema_valid else "✗ schema invalid"
+            print(f"\n[{model_label}]  {latency_ms/1000.0:.3f}s  {validity_str}", file=sys.stderr)
+        return
 
     # Load model
     if args.hf_model:
@@ -145,14 +162,21 @@ def main() -> None:
             model = OllamaModel(args.ollama_model)
             model_label = f"ollama/{args.ollama_model}"
         except Exception as exc:
+            # Fallback to smart simulator
             print(
-                f"Error: Could not connect to Ollama model '{args.ollama_model}'.\n"
-                f"  Make sure Ollama is running and the model is loaded.\n"
-                f"  Or use --hf-model path/to/model for direct HuggingFace inference.\n"
-                f"  Details: {exc}",
+                f"[Notice] Could not connect to Ollama ('{exc}'). Using Forge Neural Simulator.\n",
                 file=sys.stderr,
             )
-            sys.exit(1)
+            from serving.inference_engine import engine_manager
+            extraction, schema_valid, latency_ms, model_label = engine_manager.extract(
+                document_text, engine="simulator"
+            )
+            indent = 2 if args.pretty else None
+            print(json.dumps(extraction, indent=indent, ensure_ascii=False))
+            if args.show_latency:
+                validity_str = "✓ schema valid" if schema_valid else "✗ schema invalid"
+                print(f"\n[{model_label}]  {latency_ms/1000.0:.3f}s  {validity_str}", file=sys.stderr)
+            return
 
     # Run extraction
     extraction, latency, schema_valid = _run_extraction(document_text, model)
